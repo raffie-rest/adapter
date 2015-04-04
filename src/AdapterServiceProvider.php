@@ -13,7 +13,7 @@ class AdapterServiceProvider extends ServiceProvider {
     {
         //
         $this->publishes([
-            __DIR__.'/config/rest_resources.php' => config_path('rest_resources.php'),
+            __DIR__.'/_config/rest_resources.php' => config_path('rest_resources.php'),
         ]);
     }
  
