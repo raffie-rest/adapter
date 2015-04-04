@@ -19,7 +19,9 @@ use App\Interfaces\RestAdapterDelegateInterface;
 /*
 |--------------------------------------------------------------------------
 | Intermediate class for working with REST in L5
+|
 | Raffie ©opyleft 2015 - If you remove this message I will astrally skull fuck you
+|
 |--------------------------------------------------------------------------
 */
 
@@ -355,14 +357,7 @@ abstract class Base
 	{
 		$this->originalData = $data;
 
-		if($this->dataType == 'json')
-		{
-			$this->requestData['json'] = $data;
-		}
-		else
-		{
-			$this->requestData['body'] = $data;
-		}
+		$this->requestData['body'] = $data;
 	}
 
 	/**
