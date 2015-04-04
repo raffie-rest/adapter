@@ -29,7 +29,9 @@ return [
 		'data_type' => 'json',
 		'defaults'  => [
 			'base_url'	=> 'https://api.postcode.nl/rest',
-			'auth'		=> ['', '']
+			'defaults'	=> [
+				'auth'		=> ['', '']
+			]
 		]
 	],
 	'kvk'			=> [
