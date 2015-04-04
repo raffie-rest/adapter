@@ -13,13 +13,15 @@ class Company extends Base
 	public $resource      = 'kvk';
 	public $relativePath  = 'json';
 
+	/**
+	 * Static stub to your regular GET data
+	 * 
+	 * @param  array 	$data - GET args
+	 * 
+	 * @return array tha data
+	 */
 	public static function search($company)
 	{
-		return (new static)->search($company);
-	}
-
-	public function search($company)
-	{
-		return $this->sendRequest('GET', $company);
+		return (new static)->get($company);
 	}
 }
