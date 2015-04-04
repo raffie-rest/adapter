@@ -8,13 +8,13 @@ use Config;
 use Illuminate\Support\MessageBag;
 
 use GuzzleHttp\Client,
-	GuzzleHttp\Message\Response as GuzzleResponse;
+	GuzzleHttp\Message\Response;
 
 use GuzzleHttp\Exception\ClientException,
 	GuzzleHttp\Exception\ServerException,
 	GuzzleHttp\Exception\RequestException;
 
-use App\Interfaces\RestAdapterDelegateInterface;
+use Raffie\REST\Adapter\Interfaces\DelegateInterface;
 
 /*
 |--------------------------------------------------------------------------
@@ -100,7 +100,7 @@ abstract class Base
     |--------------------------------------------------------------------------
     */
 
-	public function __construct(RestAdapterDelegateInterface $delegate = null)
+	public function __construct(DelegateInterface $delegate = null)
 	{
 		$this->setConfig();
 		$this->setDataType();
@@ -196,7 +196,9 @@ abstract class Base
 	public function sendRequest($method = 'GET', array $arguments = [])
 	{
 		$closure = function() use($method, $arguments) {
+
 			$request = $this->prepareRequest($method, $arguments);
+
 			$response = $this->getClient()->send($request);
 
 			return $this->parseResponse($response);
@@ -219,7 +221,7 @@ abstract class Base
 			$response        = $e->getResponse();
 			$parsedResponse  = $this->parseResponse($response);
 
-			return $this->delegate->requestFails(new MessageBag($parsedResponse));
+			return $this->delegate->requestFails(new MessageBag(['errors' => $parsedResponse]));
 		}
 		/*
 		catch(InvalidArgumentException $e)
@@ -266,8 +268,12 @@ abstract class Base
 	 * @param  [type] $response [description]
 	 * @return [type]           [description]
 	 */
-	protected function parseResponse(GuzzleResponse $response)
+	protected function parseResponse($response)
 	{
+		if( ! $response instanceof Response)
+		{
+			return $response;
+		}
 		if($this->dataType == 'json')
 		{
 			return $response->json();
@@ -276,7 +282,7 @@ abstract class Base
 		{
 			return $response->xml();
 		}
-		return $response->body();
+		return $response->getBody();
 	}
 
 	/**
@@ -284,7 +290,7 @@ abstract class Base
 	 * @param  GuzzleResponse $response [description]
 	 * @return [type]                   [description]
 	 */
-	protected function parseErrorResponse(GuzzleResponse $response)
+	protected function parseErrorResponse($response)
 	{
 		return $this->parseResponse($response);
 	}
