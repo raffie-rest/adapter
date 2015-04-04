@@ -1,5 +1,5 @@
 {
-    "name": "raffie/rest",
+    "name": "raffie-rest/adapter",
     "description": "Laravel 5 Remote REST Adapter",
     "authors": [
         {
