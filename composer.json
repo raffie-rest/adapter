@@ -1,0 +1,24 @@
+{
+    "name": "raffie/rest",
+    "description": "Laravel 5 Remote REST Adapter",
+    "authors": [
+        {
+            "name": "Raffie REST",
+            "email": "raffie.rest@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/raffie-rest",
+    "license": "MIT",
+    "version": "0.1.0-alpha0",
+    "require": {
+        "illuminate/support": "5.0.*@dev",
+        "guzzlehttp/guzzle": "5.0.*",
+        "php": ">=5.5.0"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Raffie\\REST\\": "src/"
+        }
+    }
+}
