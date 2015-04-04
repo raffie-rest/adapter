@@ -18,7 +18,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Raffie\\REST\\": "src/"
+            "Raffie\\REST\\Adapter\\": "src/"
         }
     }
 }
