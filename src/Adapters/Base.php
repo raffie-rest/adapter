@@ -1,4 +1,4 @@
-<?php namespace Raffie\REST;
+<?php namespace Raffie\REST\Adapter\Adapters;
 
 use InvalidArgumentException,
 	RuntimeException;
@@ -26,7 +26,7 @@ use App\Interfaces\RestAdapterDelegateInterface;
 |--------------------------------------------------------------------------
 */
 
-abstract class Adapter 
+abstract class Base 
 {
 	// References the corresponding key in rest_resources.php
 

@@ -1,6 +1,6 @@
-<?php namespace Raffie\REST\Adapter\KVK;
+<?php namespace Raffie\REST\Adapter\Adapters\KVK;
 
-use Raffie\REST\Adapter;
+use Raffie\REST\Adapter\Adapters\Base;
 
 /*
 |--------------------------------------------------------------------------
@@ -9,7 +9,7 @@ use Raffie\REST\Adapter;
 |--------------------------------------------------------------------------
 */
 
-class Company extends Adapter 
+class Company extends Base 
 {
 	public $resource      = 'kvk';
 	public $relativePath  = 'json';

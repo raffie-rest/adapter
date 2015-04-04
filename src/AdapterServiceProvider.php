@@ -1,8 +1,8 @@
-<?php namespace Raffie\REST;
+<?php namespace Raffie\REST\Adapter;
  
 use Illuminate\Support\ServiceProvider;
  
-class RESTServiceProvider extends ServiceProvider {
+class AdapterServiceProvider extends ServiceProvider {
  
     /**
      * Bootstrap the application services.

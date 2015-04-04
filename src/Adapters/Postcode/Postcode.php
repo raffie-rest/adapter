@@ -1,6 +1,6 @@
-<?php namespace Raffie\REST\Adapter\PushOver\v1;
+<?php namespace Raffie\REST\Adapter\Adapters\PushOver\v1;
 
-use Raffie\REST\Adapter;
+use Raffie\REST\Adapter\Adapters\Base;
 
 /*
 |--------------------------------------------------------------------------
@@ -9,7 +9,7 @@ use Raffie\REST\Adapter;
 |--------------------------------------------------------------------------
 */
 
-class Postcode extends Adapter 
+class Postcode extends Base 
 {
 	public $resource      = 'postcode';
 	public $relativePath  = 'addresses';

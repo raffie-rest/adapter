@@ -1,6 +1,6 @@
-<?php namespace Raffie\REST\Adapter\HipChat\v1;
+<?php namespace Raffie\REST\Adapter\Adapters\HipChat\v1;
 
-use Raffie\REST\Adapter;
+use Raffie\REST\Adapter\Adapters\Base;
 
 /*
 |--------------------------------------------------------------------------
@@ -9,7 +9,7 @@ use Raffie\REST\Adapter;
 |--------------------------------------------------------------------------
 */
 
-class Message extends Adapter 
+class Message extends Base 
 {
 	public $resource      = 'hipchat_v1';
 	public $relativePath  = 'rooms/message';
