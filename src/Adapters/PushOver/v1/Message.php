@@ -5,7 +5,6 @@ use Raffie\REST\Adapter\Adapters\Base;
 /*
 |--------------------------------------------------------------------------
 | PushOver Message implementation
-| - Rafaël Hebing ©opyleft 2015 -
 |--------------------------------------------------------------------------
 */
 

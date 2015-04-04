@@ -1,8 +1,8 @@
-<?php namespace Raffie\REST\Interfaces;
+<?php namespace Raffie\REST\Adapter\Interfaces;
 
 use Illuminate\Support\MessageBag;
 
-interface RestAdapterDelegateInterface {
+interface DelegateInterface {
 
     /**
      * Model Create Fails

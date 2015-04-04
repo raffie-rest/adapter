@@ -1,11 +1,10 @@
-<?php namespace Raffie\REST\Adapter\Adapters\PushOver\v1;
+<?php namespace Raffie\REST\Adapter\Adapters;
 
 use Raffie\REST\Adapter\Adapters\Base;
 
 /*
 |--------------------------------------------------------------------------
 | Postcode.nl search implementation
-| - Rafaël Hebing ©opyleft 2015 -
 |--------------------------------------------------------------------------
 */
 

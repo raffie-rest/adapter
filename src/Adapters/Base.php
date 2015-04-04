@@ -19,10 +19,7 @@ use App\Interfaces\RestAdapterDelegateInterface;
 /*
 |--------------------------------------------------------------------------
 | Intermediate class for working with REST in L5
-| - Rafaël Hebing ©opyleft 2015 -
-|
 | Raffie ©opyleft 2015 - If you remove this message I will astrally skull fuck you
-|
 |--------------------------------------------------------------------------
 */
 

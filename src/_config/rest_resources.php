@@ -20,7 +20,7 @@ return [
 			'defaults'	  	=> [
 				'query'	 	=> [
 					'token' => '',
-					'user'  => 'json'
+					'user'  => ''
 				]
 			]
 	    ]
