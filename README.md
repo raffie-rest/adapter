@@ -18,7 +18,7 @@ Although I will never be able to repay the tremendous debt I owe to the creators
 
 Bear in mind that it is still being developed / bug tested. Any help / feedback is most welcome:
 
-- [E-mail](raffie-rest@gmail.com)
+- <raffie-rest@gmail.com>
 - [Issues](https://github.com/raffie-rest/adapter/issues)
 
 *****
