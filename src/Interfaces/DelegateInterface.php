@@ -5,7 +5,7 @@ use Illuminate\Support\MessageBag;
 interface DelegateInterface {
 
     /**
-     * Model Create Fails
+     * Request Fails
      * 
      * @param  Illuminate\Support\MessageBag  $errors
      * @return mixed
@@ -13,7 +13,7 @@ interface DelegateInterface {
     public function requestFails(MessageBag $errors);
 
     /**
-     * Model Create Succeeds
+     * Request Succeeds
      * 
      * @param  mixed $data
      * @return mixed

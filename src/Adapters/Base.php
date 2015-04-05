@@ -221,7 +221,7 @@ abstract class Base
 			$response        = $e->getResponse();
 			$parsedResponse  = $this->parseResponse($response);
 
-			return $this->delegate->requestFails(new MessageBag(['errors' => $parsedResponse]));
+			return $this->delegate->requestFails(new MessageBag([$parsedResponse]));
 		}
 		/*
 		catch(InvalidArgumentException $e)
