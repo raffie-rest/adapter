@@ -1,7 +1,17 @@
 # Laravel 5 Remote REST adapter
-The scribblings of a Laravel aspirant
 
-## Introduction
+## Table of contents
+
+- [Introduction](#introduction)
+- [Future development](#future)
+- [Getting started](#getting-started)
+- [Supported methods](#supported-methods)
+- [Examples](#examples)
+  - [From a Laravel 5 ShouldBeQueued, statically](#static)
+  - [From a controller or command, with delegate handles](#delegate)
+- [Implementing your own Remote REST end-points](#implement)
+
+## <a name="introduction"></a> Introduction
 I built this thing on top of guzzle mainly to facilitate remote REST calls from a Laravel 5 application in a more, "abstracted", manner. In L4 and prior, there were all sorts of neat packages and abstractions that seemed to do this well enough, although the L5 transition has rendered many of them incompatible with the new framework.
 
 Although I will never be able to repay the tremendous debt I owe to the creators of the Laravel Framework, I thought the least I could do was share this.
@@ -13,37 +23,7 @@ Bear in mind that it is still being developed / bug tested. Any help / feedback 
 
 *****
 
-## What it can do
-
-Things like:
-
-	Foo::get()
-	Foo::get(1)
-	Foo::get(1, 'addresses')
-	Foo::get(1, 'addresses', 2)
-	Foo::post([])
-	Foo::post(1, 'addresses' , [])
-	Foo::put(1, [])
-	Foo::put(1, 'addresses', 2, [])
-	Foo::delete(1)
-	Foo::delete(1, 'addresses', 2)
-
-Notice the resemblance to Laravel 5 Resourceful controller URI format?
-
-The same principal applies to non-statics also.
-
-Supported HTTP request types:
-
-- GET
-- POST
-- PUT
-- DELETE
-- HEAD
-- OPTIONS
-
-*****
-
-## Where I wanna go from here:
+## <a name="future"></a> Future development
 
 ### Incorporate Google oAuth2 Service Account auth
  
@@ -59,7 +39,7 @@ Not sure whether it is necessary
 
 *****
 
-## Getting started
+## <a name="getting-started"></a> Getting started
 
 Add the package to your repo:
 
@@ -92,13 +72,43 @@ As you can see, as far as the defaults are concerned, it's all Guzzle.
 - [Read up on Guzzle](http://guzzle.readthedocs.org/en/latest/)
 - [Guzzle API Docs](http://api.guzzlephp.org/)
 	
-** That's it, you're all set! No wait... **
+That's it, you're all set! No wait...
 
 *****
 
-## Calling forth the functionality
+## <a name="supported-methods"></a> Supported methods
+
+Things like:
+
+	Foo::get()
+	Foo::get(1)
+	Foo::get(1, 'addresses')
+	Foo::get(1, 'addresses', 2)
+	Foo::post([])
+	Foo::post(1, 'addresses' , [])
+	Foo::put(1, [])
+	Foo::put(1, 'addresses', 2, [])
+	Foo::delete(1)
+	Foo::delete(1, 'addresses', 2)
+
+Notice the resemblance to Laravel 5 Resourceful controller URI format?
+
+The same principal applies to non-statics also.
+
+Supported HTTP request types:
+
+- GET
+- POST
+- PUT
+- DELETE
+- HEAD
+- OPTIONS
+
+*****
+
+## <a name="examples"></a> Examples
  
-### From a Laravel 5 ShouldBeQueued, statically:
+### <a name="static"></a> From a Laravel 5 ShouldBeQueued, statically
 
 `App\Commands\SendPushOver.php`	:
 	
@@ -147,7 +157,7 @@ As you can see, as far as the defaults are concerned, it's all Guzzle.
 
 *****
 
-### From a controller / command, with delegate handles:
+### <a name="delegate"></a> From a controller / command, with delegate handles
 
 Implement the DelegateInterface and go from there:
 
@@ -205,7 +215,7 @@ Implement the DelegateInterface and go from there:
 
 *****
 
-## Implementing your own Remote REST end-points:
+## <a name="implement"></a> Implementing your own Remote REST end-points
 
 Easy peasy lemon squeezy, with everything being inherited from its abstract parent:
 
