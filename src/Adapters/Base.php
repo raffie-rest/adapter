@@ -218,8 +218,13 @@ abstract class Base
 		}
 		catch(RequestException $e)
 		{
-			$response        = $e->getResponse();
-			$parsedResponse  = $this->parseResponse($response);
+			$parsedResponse = 'Timeout on ' . $e->getRequest()->getUrl();
+
+			if($e->hasResponse())
+			{
+				$response        = $e->getResponse();
+				$parsedResponse  = $this->parseResponse($response);
+			}
 
 			return $this->delegate->requestFails(new MessageBag([$parsedResponse]));
 		}
