@@ -4,20 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d0b835d45c9cbc8edccfe7f31eeb74e3",
+    "hash": "7e9eda200e49057f1cbb22dc1104e83c",
+    "content-hash": "7f2ebcaea0528bebe7bf31c03c09ca72",
     "packages": [
         {
             "name": "danielstjules/stringy",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielstjules/Stringy.git",
-                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b"
+                "reference": "4749c205db47ee5b32e8d1adf6d9aff8db6caf3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
-                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/4749c205db47ee5b32e8d1adf6d9aff8db6caf3b",
+                "reference": "4749c205db47ee5b32e8d1adf6d9aff8db6caf3b",
                 "shasum": ""
             },
             "require": {
@@ -60,20 +61,20 @@
                 "utility",
                 "utils"
             ],
-            "time": "2015-02-10 06:19:18"
+            "time": "2015-07-23 00:54:12"
         },
         {
             "name": "doctrine/inflector",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "0bcb2e79d8571787f18b7eb036ed3d004908e604"
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/0bcb2e79d8571787f18b7eb036ed3d004908e604",
-                "reference": "0bcb2e79d8571787f18b7eb036ed3d004908e604",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/90b2128806bfde671b6952ab8bea493942c1fdae",
+                "reference": "90b2128806bfde671b6952ab8bea493942c1fdae",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +86,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -127,30 +128,30 @@
                 "singularize",
                 "string"
             ],
-            "time": "2014-12-20 21:24:13"
+            "time": "2015-11-06 14:35:42"
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "5.0.3",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "6c72627de1d66832e4270e36e56acdb0d1d8f282"
+                "reference": "f3c8c22471cb55475105c14769644a49c3262b93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/6c72627de1d66832e4270e36e56acdb0d1d8f282",
-                "reference": "6c72627de1d66832e4270e36e56acdb0d1d8f282",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f3c8c22471cb55475105c14769644a49c3262b93",
+                "reference": "f3c8c22471cb55475105c14769644a49c3262b93",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/ringphp": "~1.0",
+                "guzzlehttp/ringphp": "^1.1",
                 "php": ">=5.4.0"
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "~4.0",
-                "psr/log": "~1.0"
+                "phpunit/phpunit": "^4.0",
+                "psr/log": "^1.0"
             },
             "type": "library",
             "extra": {
@@ -185,7 +186,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-11-04 07:09:15"
+            "time": "2015-05-20 03:47:55"
         },
         {
             "name": "guzzlehttp/ringphp",
@@ -290,16 +291,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.1.1",
+            "version": "v5.1.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "6e18848e5d332d802aa8bfa60b95e022023973f1"
+                "reference": "e2b71fdbeeb3438748dca5f497e205888788a883"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/6e18848e5d332d802aa8bfa60b95e022023973f1",
-                "reference": "6e18848e5d332d802aa8bfa60b95e022023973f1",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/e2b71fdbeeb3438748dca5f497e205888788a883",
+                "reference": "e2b71fdbeeb3438748dca5f497e205888788a883",
                 "shasum": ""
             },
             "require": {
@@ -328,20 +329,20 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "http://laravel.com",
-            "time": "2015-06-08 18:13:21"
+            "time": "2015-09-24 11:16:48"
         },
         {
             "name": "illuminate/support",
-            "version": "v5.1.1",
+            "version": "v5.1.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "6102ad040e125921de1290ed0184b87d3d55c9ac"
+                "reference": "96e4fa331ed8bad83314a6bdb26a998970a0d8c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/6102ad040e125921de1290ed0184b87d3d55c9ac",
-                "reference": "6102ad040e125921de1290ed0184b87d3d55c9ac",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/96e4fa331ed8bad83314a6bdb26a998970a0d8c2",
+                "reference": "96e4fa331ed8bad83314a6bdb26a998970a0d8c2",
                 "shasum": ""
             },
             "require": {
@@ -353,7 +354,8 @@
             },
             "suggest": {
                 "jeremeamia/superclosure": "Required to be able to serialize closures (~2.0).",
-                "symfony/var-dumper": "Required to use the dd function (2.7.*)."
+                "paragonie/random_compat": "Provides a compatible interface like PHP7's random_bytes() in PHP 5 projects (~1.1).",
+                "symfony/var-dumper": "Improves the dd function (2.7.*)."
             },
             "type": "library",
             "extra": {
@@ -381,20 +383,20 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "http://laravel.com",
-            "time": "2015-06-08 19:12:16"
+            "time": "2016-02-15 19:41:59"
         },
         {
             "name": "react/promise",
-            "version": "v2.2.0",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise.git",
-                "reference": "365fcee430dfa4ace1fbc75737ca60ceea7eeeef"
+                "reference": "8025426794f1944de806618671d4fa476dc7626f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/365fcee430dfa4ace1fbc75737ca60ceea7eeeef",
-                "reference": "365fcee430dfa4ace1fbc75737ca60ceea7eeeef",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/8025426794f1944de806618671d4fa476dc7626f",
+                "reference": "8025426794f1944de806618671d4fa476dc7626f",
                 "shasum": ""
             },
             "require": {
@@ -421,11 +423,11 @@
             "authors": [
                 {
                     "name": "Jan Sorgalla",
-                    "email": "jsorgalla@googlemail.com"
+                    "email": "jsorgalla@gmail.com"
                 }
             ],
             "description": "A lightweight implementation of CommonJS Promises/A for PHP",
-            "time": "2014-12-30 13:32:42"
+            "time": "2016-05-03 17:50:52"
         }
     ],
     "packages-dev": [],
