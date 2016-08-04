@@ -12,9 +12,6 @@ class AdapterServiceProvider extends ServiceProvider {
     public function boot()
     {
         //
-        $this->publishes([
-            __DIR__.'/_config/rest_resources.php' => config_path('rest_resources.php'),
-        ]);
     }
  
     /**
